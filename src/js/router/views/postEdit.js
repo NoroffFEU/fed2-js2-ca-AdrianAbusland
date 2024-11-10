@@ -85,7 +85,7 @@ export default async function postEdit() {
 
 
                 await updatePost(id, updateData);
-                alert('Post updated successfully!');
+                // alert('Post updated successfully!');
                 window.location.href = `${window.location.origin}/fed2-js2-ca-AdrianAbusland/post/?id=${id}`;
             } catch (error) {
                 console.error('Update error:', error);
@@ -98,7 +98,7 @@ export default async function postEdit() {
     } catch (error) {
         console.error('Error in postEdit:', error);
         alert(error.message || 'Failed to load post data');
-        window.location.href = '/';
+        window.location.href = `${window.location.origin}/fed2-js2-ca-AdrianAbusland/`;
     }
 }
 
