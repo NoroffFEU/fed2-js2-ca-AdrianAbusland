@@ -18,7 +18,7 @@ export function initMobileMenu() {
         mobileLogoutBtn.addEventListener('click', () => {
             localStorage.removeItem("token");
             localStorage.removeItem("postId");
-            window.location.href = "./auth/login/";
+            window.location.href = "../../auth/login/";
         });
     }
 
