@@ -46,7 +46,7 @@ export async function login({ email, password }) {
             const data = await response.json();
             const accessToken = data.data.accessToken;
             localStorage.setItem("token", accessToken);
-            window.location.href = `${window.location.origin}/`;
+            window.location.href = `${window.location.origin}/fed2-js2-ca-AdrianAbusland/`;
             alert(`Successfully logged in`);
             
         } 
