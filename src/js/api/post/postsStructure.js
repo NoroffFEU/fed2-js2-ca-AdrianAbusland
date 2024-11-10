@@ -73,7 +73,7 @@ export const displayPosts = (posts, loggedInUserName) => {
         viewPostButton.className = "w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 transition-colors duration-200";
 
         viewPostButton.addEventListener("click", () => {
-            window.location.href = `/post/?id=${post.id}`;
+            window.location.href = `./post/?id=${post.id}`;
             localStorage.setItem("postId", JSON.stringify(post.id))
         });
 
