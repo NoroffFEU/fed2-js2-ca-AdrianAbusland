@@ -47,7 +47,7 @@ export async function login({ email, password }) {
             const accessToken = data.data.accessToken;
             localStorage.setItem("token", accessToken);
             window.location.href = `${window.location.origin}/fed2-js2-ca-AdrianAbusland/`;
-            alert(`Successfully logged in`);
+            // alert(`Successfully logged in`);
             
         } 
     } catch (error) {
