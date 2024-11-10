@@ -89,7 +89,7 @@ export const displayPost = (post) => {
         </svg>
         Edit Post
     `;
-    editButton.addEventListener('click', () => window.location.href = `/post/edit/?id=${post.id}`);
+    editButton.addEventListener('click', () => window.location.href = `../../../../post/edit/?id=${post.id}`);
 
     const deleteButton = document.createElement('button');
     deleteButton.className = "inline-flex items-center px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors duration-200 text-sm font-medium";
