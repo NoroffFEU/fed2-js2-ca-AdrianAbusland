@@ -20,8 +20,8 @@ export async function onCreatePost(event) {
 
     try {
         const result = await createPost(createData);
-        console.log("Post creation result:", result);
-        alert('Post created successfully!');
+        // console.log("Post creation result:", result);
+        // alert('Post created successfully!');
         form.reset();
 
         window.location.href = `${window.location.origin}/fed2-js2-ca-AdrianAbusland/`;
