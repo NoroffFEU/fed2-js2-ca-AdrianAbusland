@@ -1,5 +1,5 @@
-import { readPost } from "../../api/post/read";
-import { onDeletePost } from "../../ui/post/delete";
+import { readPost } from "../../api/post/read.js";
+import { onDeletePost } from "../../ui/post/delete.js";
 
 export const displayPost = (post) => {
     const postContainer = document.getElementById("postsContainer");

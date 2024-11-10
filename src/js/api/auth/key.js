@@ -1,4 +1,4 @@
-import {API_AUTH_KEY, } from "../constants"
+import {API_AUTH_KEY, } from "../constants.js"
 
 const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWRyaWFuZjk4IiwiZW1haWwiOiJhZHJhYnUwMDIwMUBzdHVkLm5vcm9mZi5ubyIsImlhdCI6MTcyNzYxNDk0OX0.dxoJObNwnYgL6fN7YgCS0p8TLPaBRqAW9GLYX-cUaQo"
 

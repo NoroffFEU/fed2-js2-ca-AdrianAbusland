@@ -1,4 +1,4 @@
-import { updatePost } from "../../api/post/update";
+import { updatePost } from "../../api/post/update.js";
 
 export async function onUpdatePost(event, postId) {
     event.preventDefault();

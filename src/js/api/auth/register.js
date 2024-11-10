@@ -1,5 +1,5 @@
-import {API_AUTH_REGISTER} from "../constants"
-import { headers } from "../headers";
+import {API_AUTH_REGISTER} from "../constants.js"
+import { headers } from "../headers.js";
 
 export async function register({
   name,

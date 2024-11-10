@@ -1,4 +1,4 @@
-import { register } from "../../api/auth/register";
+import { register } from "../../api/auth/register.js";
 
 export function onRegister(event) {
     event.preventDefault();
