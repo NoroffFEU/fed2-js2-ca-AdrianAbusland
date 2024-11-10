@@ -86,7 +86,7 @@ export default async function postEdit() {
 
                 await updatePost(id, updateData);
                 alert('Post updated successfully!');
-                window.location.href = `/post/?id=${id}`;
+                window.location.href = `${window.location.origin}/fed2-js2-ca-AdrianAbusland/post/?id=${id}`;
             } catch (error) {
                 console.error('Update error:', error);
                 alert(error.message || 'Failed to update post');
