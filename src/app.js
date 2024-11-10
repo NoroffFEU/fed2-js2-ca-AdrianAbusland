@@ -1,5 +1,3 @@
-import "./css/style.css";
-
 import router from "./js/router/index.js";
 
 import { initMobileMenu } from './js/utilities/mobileMenu.js';
