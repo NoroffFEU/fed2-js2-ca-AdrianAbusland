@@ -37,3 +37,5 @@ import { authGuard } from "../../utilities/authGuard";
 
 //     setLogoutListener();
 // }
+
+authGuard();
