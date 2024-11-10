@@ -2,7 +2,11 @@
 // In order to add additional pages, you will need to implement them below
 // You may change the behaviour or approach of this file if you choose
 export default async function router(pathname = window.location.pathname) {
-  switch (pathname) {
+  // Remove the base path from the pathname
+  const basePath = "/fed2-js2-ca-AdrianAbusland";
+  const adjustedPathname = pathname.startsWith(basePath) ? pathname.slice(basePath.length) : pathname;
+
+  switch (adjustedPathname) {
     case "/":
       await import("./views/home.js");
       break;
