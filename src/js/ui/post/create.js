@@ -24,7 +24,7 @@ export async function onCreatePost(event) {
         alert('Post created successfully!');
         form.reset();
 
-        window.location.href = `${window.location.origin}/fed2-js2-ca-AdrianAbusland/auth/login/`;
+        window.location.href = `${window.location.origin}/fed2-js2-ca-AdrianAbusland/`;
     } catch (error) {
         console.error("Error in onCreatePost:", error);
         alert(`Failed to create post: ${error.message}`);
