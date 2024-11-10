@@ -1,5 +1,5 @@
-import {API_AUTH_LOGIN } from "../constants";
-import { headers } from "../headers"
+import {API_AUTH_LOGIN } from "../constants.js";
+import { headers } from "../headers.js"
 
 /**
  * Logs in a user by sending their credentials to the server.
