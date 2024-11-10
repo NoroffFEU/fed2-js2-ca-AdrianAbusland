@@ -1,7 +1,13 @@
-import "./css/output.css";
+import router from "./js/router/index.js";
 
-import router from "./js/router";
+import { initMobileMenu } from './js/utilities/mobileMenu.js';
 
-await router(window.location.pathname);
+// Initialize router
+router();
+
+// Initialize mobile menu when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    initMobileMenu();
+});
 
 

@@ -1,5 +1,5 @@
-import {API_AUTH_LOGIN } from "../constants";
-import { headers } from "../headers"
+import {API_AUTH_LOGIN } from "../constants.js";
+import { headers } from "../headers.js"
 
 /**
  * Logs in a user by sending their credentials to the server.
@@ -46,8 +46,8 @@ export async function login({ email, password }) {
             const data = await response.json();
             const accessToken = data.data.accessToken;
             localStorage.setItem("token", accessToken);
-            window.location.href = "/"
-            alert(`Successfully logged in`);
+            window.location.href = `${window.location.origin}/fed2-js2-ca-AdrianAbusland/`;
+            // alert(`Successfully logged in`);
             
         } 
     } catch (error) {

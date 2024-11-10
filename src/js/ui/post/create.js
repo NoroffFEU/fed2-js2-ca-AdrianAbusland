@@ -1,4 +1,4 @@
-import { createPost } from "../../api/post/create";
+import { createPost } from "../../api/post/create.js";
 
 export async function onCreatePost(event) {
     event.preventDefault();
@@ -20,11 +20,11 @@ export async function onCreatePost(event) {
 
     try {
         const result = await createPost(createData);
-        console.log("Post creation result:", result);
-        alert('Post created successfully!');
+        // console.log("Post creation result:", result);
+        // alert('Post created successfully!');
         form.reset();
 
-        window.location.href = '/';
+        window.location.href = `${window.location.origin}/fed2-js2-ca-AdrianAbusland/`;
     } catch (error) {
         console.error("Error in onCreatePost:", error);
         alert(`Failed to create post: ${error.message}`);

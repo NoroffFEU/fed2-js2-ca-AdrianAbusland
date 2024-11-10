@@ -1,4 +1,4 @@
-// import { authGuard } from "../../utilities/authGuard";
+import { authGuard } from "../../utilities/authGuard";
 // import { readPostsByUser } from "../../api/post/read";
 // import { displayPosts } from "../../api/post/postsStructure";
 // import { setLogoutListener } from "../../ui/global/logout";
@@ -37,3 +37,5 @@
 
 //     setLogoutListener();
 // }
+
+authGuard();

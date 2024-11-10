@@ -1,5 +1,5 @@
-import { onRegister } from "../../ui/auth/register";
-import { setLogoutListener } from "../../ui/global/logout";
+import { onRegister } from "../../ui/auth/register.js";
+import { setLogoutListener } from "../../ui/global/logout.js";
 
 const form = document.forms.register;
 

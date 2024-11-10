@@ -1,4 +1,4 @@
-import { deletePost } from "../../api/post/delete";
+import { deletePost } from "../../api/post/delete.js";
 
 export async function onDeletePost(postId) {
     
@@ -12,10 +12,10 @@ export async function onDeletePost(postId) {
         try {
             const result = await deletePost(postId);
             if (result) {
-                console.log('Post successfully deleted');
+                // console.log('Post successfully deleted');
                 alert('Post successfully deleted');
                 // Redirect to home page
-                window.location.href = "/";
+                window.location.href = `${window.location.origin}/fed2-js2-ca-AdrianAbusland/`;
             } else {
                 throw new Error('Failed to delete post');
             }
