@@ -46,7 +46,7 @@ export async function login({ email, password }) {
             const data = await response.json();
             const accessToken = data.data.accessToken;
             localStorage.setItem("token", accessToken);
-            window.location.href = "/"
+            window.location.href = `${window.location.origin}/`;
             alert(`Successfully logged in`);
             
         } 
